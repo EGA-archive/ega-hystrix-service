@@ -27,11 +27,11 @@ import org.springframework.cloud.netflix.turbine.EnableTurbine;
 @EnableTurbine
 public class HystrixDashboardServerApplication {
 
-        protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-                return application.sources(HystrixDashboardServerApplication.class);
-        }
-    
-	public static void main(String[] args) {
-		SpringApplication.run(HystrixDashboardServerApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(HystrixDashboardServerApplication.class, args);
+    }
+
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(HystrixDashboardServerApplication.class);
+    }
 }
